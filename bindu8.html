@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myfunction()">click on</button>
+
+<p id="demo"></p>
+
+<script>
+function myfunction(){
+  var str = "visit Html page";
+  var patt = /html/i;
+  var result = str.match(patt);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+
