@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<h1>HTML Events for more interactive</h1>
+<h2>when we acess file it shows alert as welcome</h2>
+<body onpageshow="myfunction()">
+
+
+<p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">
+when mouse moved up text changes red and mouse moves down it gets green</p>
+<script>
+	function myfunction(){
+		alert("Welcome");
+	}
+</script>
+<script>
+	function mouseDown() {
+		document.getElementById("p1").style.color ="red";
+
+	}
+function mouseup(){
+document.getElementById("p1").style.color="green";
+
+}
+</script>
+</body>
+</html>

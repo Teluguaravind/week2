@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <h1>Using Try and Catch error to identify bugs</h1>
+	<p>Input the number in between 10 to 100:</p>
+	<input id="demo" type="text">
+<button type="button" onclick="myfunction()">Test Input</button>
+<p id="nano"></p>
+<script>
+function myfunction() {
+var message,x;
+message=document.getElementById("nano");
+message.innerhtml = "";
+x = document.getElementById("demo").value;
+try {
+if(x == "") throw "empty";
+x = Number(x);
+if(x < 10) throw "input should be greater than ten";
+if(x > 100) throw "input should be lessthan Hundred";
+}				
+catch(err){
+message.innerHTML = "input is " + err;
+				}
+			}
+		</script>
+	</body>
+	</html>
+
+			
